@@ -1,0 +1,56 @@
+<%-include partials/header.ejs%>
+<%-include partials/main_nav.ejs%>
+  <!--Main nav Navigation-->
+  
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the <%=title%> Page </h1>
+    </div>
+    <% if(title=="Home"){%>
+      <p> 
+      <%-include partials/home.ejs%>
+      </p>
+        <%}else{%>
+          
+        <%}%>
+    <% if(title=="About Me"){%>
+      <p> 
+      <%-include partials/about.ejs%>
+      </p>
+        <%}else{%>
+          
+        <%}%>
+    <% if(title=="Projects"){%>
+      <p> 
+      <%-include partials/projects.ejs%>
+      </p>
+        <%}else{%>
+          
+        <%}%>
+    <% if(title=="Services"){%>
+      <p> 
+      <%-include partials/services.ejs%>
+      </p>
+        <%}else{%>
+          
+        <%}%>
+    <% if(title=="Contact Me"){%>
+      <p> 
+      <%-include partials/contact.ejs%>
+      </p>
+        <%}else{%>
+          
+        <%}%>
+    
+  <main>
+
+    
+  <!--<h1><%= title %></h1>-->
+  <!--<p>Welcome to the <%= title %> Page</p>-->
+  <!--Script section-->
+  <%-include partials/bottom_nav.ejs%>
+  <%-include partials/footer.ejs%>
+
+
+
+
